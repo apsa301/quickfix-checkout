@@ -698,7 +698,7 @@
                   <li>Best for quick, focused fixes between classes</li>
                 </ul>
               </div>
-              <div class="price" id="individual-package-price">From HK$30</div>
+              <div class="price" id="individual-package-price">From HK$25</div>
             </button>
           </div>
 
@@ -966,7 +966,7 @@
         selectedPrice = selectedIndividualServices.reduce((sum, item) => sum + item.price, 0);
         selectedStation = selectedIndividualServices.length === 1 ? selectedIndividualServices[0].label : 'Selected Service';
 
-        individualPackagePrice.textContent = selectedPrice > 0 ? `HK$${selectedPrice}` : 'From HK$30';
+        individualPackagePrice.textContent = selectedPrice > 0 ? `HK$${selectedPrice}` : 'From HK$25';
         checkinBtn.disabled = selectedIndividualServices.length === 0;
 
         if (selectedIndividualServices.length === 0) {
